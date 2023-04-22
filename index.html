@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name = "viewport" content ="with=device-width, initial-scale = 1.0">
+        <title>GlassLook mini Project</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+<section class ="header">
+        <nav>
+            <a href = "index.html"><img src="Images/lastlogo.png" ></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">PROJECTS</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+ <div class="text-box">
+        <h1>Spectate and dive in</h1>
+        <p>This is a general purpose site. <br> I've used this as a basis for learning diffrent front-end skills.</p>
+        <a href="" class="hero-btn">Contact me to know more</a>
+</div>
+            
+</section>
+
+ <!--course -->
+
+ <section class="projects">
+    <h1>Personal Projects</h1>
+    <p>This section contains projects I have worked on, either in school or on my own</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Incomplete projects</h3>
+            <p> This is all just filler, I plan to come back to this in the future and
+                add relevant texts and links soon enough. Peace
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>College Work</h3>
+            <p> This is all just filler, I plan to come back to this in the future and
+                add relevant texts and links soon enough. Peace
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>Personal Work</h3>
+            <p> This is all just filler, I plan to come back to this in the future and
+                add relevant texts and links soon enough. Peace
+            </p>
+        </div>
+    </div>
+ </section>
+
+ <!----javascript for toggle menu---->
+<script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200";
+    }
+
+</script>
+
+
+ </body>
+</html>
